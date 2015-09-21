@@ -4,7 +4,9 @@ _ = require 'lodash'
 class ContainsAllKeys extends ReturnValue
   onEnvelope: (envelope) =>
     {message, config, data} = envelope
-    messageContainsAllKeys = _.all config.composeKeys, (key) => _.has message, key
+
+    keys = _.keys config.compose
+    messageContainsAllKeys = _.all keys, (key) => _.has message, key
 
     return message if messageContainsAllKeys
 

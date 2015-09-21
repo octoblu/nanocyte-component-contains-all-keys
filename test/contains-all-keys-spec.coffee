@@ -8,7 +8,7 @@ describe 'ContainsAllKeys', ->
     beforeEach ->
       @result = @sut.onEnvelope
         message: {foo: 'bar'}
-        config:  {composeKeys: ['foo']}
+        config:  {compose: {'foo':'foo'}}
         data:    {foo: 'bar'}
 
     it 'should return the message', ->
@@ -18,7 +18,7 @@ describe 'ContainsAllKeys', ->
     beforeEach ->
       @result = @sut.onEnvelope
         message: {foo: 'bar'}
-        config:  {composeKeys: ['foo', 'somethingLimp']}
+        config:  {compose: {'foo':'foo', 'somethingLimp': 'somethingLimp'}}
         data:    {foo: 'bar'}
 
     it 'should return nothing', ->
