@@ -1,6 +1,6 @@
 {
   "name": "nanocyte-component-contains-all-keys",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Only emit if the incoming message contains all desired keys",
   "main": "index.js",
   "scripts": {
@@ -29,6 +29,7 @@
     "sinon-chai": "^2.8.0"
   },
   "dependencies": {
-    "lodash": "^3.10.1"
+    "lodash": "^3.10.1",
+    "nanocyte-component-return-value": "^1.0.0"
   }
 }

@@ -1,17 +1,11 @@
-{Transform} = require 'stream'
+ReturnValue = require 'nanocyte-component-return-value'
 _ = require 'lodash'
 
-class ContainsAllKeys extends Transform
-  constructor: ->
-    super objectMode: true
-
-  _transform: (envelope, enc, next) =>
+class ContainsAllKeys extends ReturnValue
+  onEnvelope: (envelope) =>
     {message, config, data} = envelope
-
     messageContainsAllKeys = _.all config.composeKeys, (key) => _.has message, key
-    
-    @push message if messageContainsAllKeys
-    @push null
-    next()
+
+    return message if messageContainsAllKeys
 
 module.exports = ContainsAllKeys
