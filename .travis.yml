@@ -1,4 +1,12 @@
 language: node_js
 node_js:
 - '0.11'
-- '0.10'
+deploy:
+  provider: npm
+  email: serveradmin@octoblu.com
+  api_key:
+    secure: E2pHgGVk/rN8322O4PlKDxKAzpjTo1Zh43s5Z4VsmFwI+c2VnwApiidMZO5ev+SG6FUT5Vd9MUhvO9APN937cq0Z59J15c8ZE5IWtnTBE/4SqFKcBwYc4l7tbd8wzxwR5v4AzC3v1vkxxY3InMbCsVyxua3XqwBda65R4wlQuwaIJKaEw5drKxWqIU0mNhwV2NNVk21g3+jJY4YkvLxzoy1o4xMBY/2KgTylmaF0WESEJkaKtweyrZlMiojVTT7Kwoj+0VN+9I7mOV2ttZ4b1xcNwIADCX719GihxCANodSmsVDGD0u1soXiO7WLmW9hDQ5KfmHverw5RseHwh6gojNcmRWVvH7JEmRLjdJbXKrHCt4nCoV8A5Ceti0vUrshVcv6q1ZdtaIvGik8L7ktU5wvzdkQNxZlOAgw3ITTBwsVYjbZvGVPFLyZNQNm8HJIcUvrakiqK9ENd/xhlc1du1FAe28FuMu1SCPQ1K/iAfU5+KVk3KCHW90vpYyNhGv0m0G1KrL3r4F0dObNt+kxlcyQmXRiC/U7Vp0I2oe7mMwReQ2pVlstR0Czt821xRq1LBcv9wkwHr3ujtlknmrFxqkA9/1zi8fuBwOiHiJkca8Ax+GxC3YsERcUt3fbUorhY51uvZWngfLSIfa4Zhg6NsPZfDWpH71zoKq06su8oDE=
+  on:
+    tags: true
+    branches: true
+    repo: octoblu/nanocyte-component-contains-all-keys
