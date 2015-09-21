@@ -1,0 +1,34 @@
+{
+  "name": "nanocyte-component-contains-all-keys",
+  "version": "1.0.0",
+  "description": "Only emit if the incoming message contains all desired keys",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octoblu/nanocyte-component-contains-all-keys.git"
+  },
+  "keywords": [
+    "Meshblu",
+    "Octoblu",
+    "Nanocyte"
+  ],
+  "author": "Octoblu Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/octoblu/nanocyte-component-contains-all-keys/issues"
+  },
+  "homepage": "https://github.com/octoblu/nanocyte-component-contains-all-keys#readme",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "coffee-script": "^1.10.0",
+    "mocha": "^2.3.3",
+    "sinon": "^1.16.1",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
