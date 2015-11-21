@@ -1,6 +1,6 @@
 {
   "name": "nanocyte-component-contains-all-keys",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Only emit if the incoming message contains all desired keys",
   "main": "index.js",
   "scripts": {

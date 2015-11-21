@@ -3,7 +3,7 @@ _ = require 'lodash'
 
 class ContainsAllKeys extends ReturnValue
   onEnvelope: (envelope) =>
-    {message, config, data} = envelope
+    {message, config} = envelope
 
     configData = @_convert config.compose
 
@@ -15,6 +15,6 @@ class ContainsAllKeys extends ReturnValue
 
   _messageContainsAllKeys: ({configData, message}) =>
     _.all configData, ([key,value]) =>
-      _.has message, key
+      _.has message, "#{key}"
 
 module.exports = ContainsAllKeys
