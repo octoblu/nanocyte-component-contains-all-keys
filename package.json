@@ -1,10 +1,10 @@
 {
   "name": "nanocyte-component-contains-all-keys",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Only emit if the incoming message contains all desired keys",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover _mocha -- -R spec"
+    "test": "istanbul cover _mocha -- -R spec --require coffee-coverage/register-istanbul"
   },
   "repository": {
     "type": "git",
